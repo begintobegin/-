@@ -2038,6 +2038,9 @@ body {
 .footer__body-item-center-ip-politick-adaptive {
   display: none;
 }
+.footer__body-item-left-questions-adaptive {
+  display: none;
+}
 @media (max-width: 777px) {
   .footer__body {
     flex-direction: column;
