@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/module/slick/slick.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/module/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>шишки дом</title>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <!-- jQuery -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- Здесь цепляем кода iframe_api-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__nav">
+          <div class="header__nav-logo-wrapper">
+            <a href="">
+              <img
+                src="/image/логотип.png"
+                alt=""
+                onclick="eventclick()"
+                id="logo"
+            /></a>
+          </div>
+          <ul class="header__ul-nav">
+            <li class="header__li-nav">
+              <a href="">Проекты и цены </a><span></span>
+            </li>
+            <li class="header__li-nav">
+              <a href=""> Калькулятор стоимости </a><span></span>
+            </li>
+            <li class="header__li-nav"><a href="">Отзывы</a><span></span></li>
+            <li class="header__nav-contact">
+              <div class="header__work-schedule">
+                Без выходных: 9:00-18:00 <br />
+                <div class="header__work-schedule-wrapper">
+                  <div class="circle"></div>
+                  Пишите, мы online
+                </div>
+              </div>
+              <div class="header__social-wrapper">
+                <a href=""
+                  ><img
+                    src="/image/иконка телеграм.png"
+                    alt=""
+                    class="telegram"
+                /></a>
+                <a href=""
+                  ><img src="/image/whatsapp.png" alt="" class="whatsaap"
+                /></a>
+              </div>
+              <div class="header__nav-button">Заказать звонок</div>
+            </li>
+          </ul>
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="header__body">
+          <div class="header__body-title">
+            <span>Построим дом мечты за 120 дней</span>
+            Строительство домов в Якутии и республике Саха по индивидуальному
+            или готовому проекту
+          </div>
+          <button class="header__body-button">
+            <div class="header__body-button-wrapper">
+              <span>расчитать стоимость</span> <br />
+              за 1 минуту
+            </div>
+            <img
+              src="/image/Mask Group (1).png"
+              alt=""
+              class="header__body-button-image"
+            />
+          </button>
+        </div>
+        <div class="header__footer invisible">
+          <div class="header__footer-item">
+            <div class="header__footer-item-body">
+              <div class="header__footer-item-image">
+                <span><img src="/image/i-PhotoRoom 5.png" alt="" /></span>
+              </div>
+              <div class="header__footer-item-text">
+                Цена фиксирована и не изменится в процессе строительства
+              </div>
+            </div>
+          </div>
+          <div class="header__footer-item alt">
+            <div class="header__footer-item-body">
+              <div class="header__footer-item-image">
+                <span><img src="/image/image 43.png" alt="" /></span>
+              </div>
+              <div class="header__footer-item-text">
+                Гарантия на дом 5 лет включена в договор
+              </div>
+            </div>
+          </div>
+          <div class="header__footer-item">
+            <div class="header__footer-item-body">
+              <div class="header__footer-item-image">
+                <span
+                  ><img
+                    src="/image/Без имени-2.png"
+                    class="header__footer-item-image-set"
+                    alt=""
+                /></span>
+              </div>
+              <div class="header__footer-item-text">
+                От проекта до готового дома за 120 дней
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- <div
+        class="slider__wrapper-header swiper-wrapper"
+        id="slider__wrapper-header"
+      >
+        <div class="slider__slide swiper-slide">
+          <div class="slider__slide-flex" id="slide">
+            <div class="slider__slide-flex-up slider__slide-flex-up-header">
+              <img src="/image/Subtract2.png" alt="" />
+              <button
+                class="slider__slide-flex-up-prev-header"
+                id="slider__slide-flex-up-prev-header"
+                onclick="sliderPrev(this)"
+              >
+                <div></div>
+              </button>
+              <button
+                class="slider__slide-flex-up-next-header"
+                id="slider__slide-flex-up-next-header"
+                onclick="sliderNext(this)"
+              >
+                <div></div>
+              </button>
+            </div>
+            <div class="slider__slide-flex-down">
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 45.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="slider__slide-info">
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-name">Проект «дом захаровых»</div>
+              <div class="slider__slide-info-price">8 402 000Руб</div>
+            </div>
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-property">
+                <div class="slider__slide-info-property-size">
+                  <img src="/image/Ruler Combined.png" alt="" />размер: 7х8
+                </div>
+                <div class="slider__slide-info-property-floor">
+                  <img src="/image/Home.png" alt="" />этажей: 2
+                </div>
+              </div>
+              <div class="slider__slide-info-button">смотреть проект</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__slide swiper-slide">
+          <div class="slider__slide-flex" id="slide">
+            <div class="slider__slide-flex-up slider__slide-flex-up-header">
+              <img src="/image/Subtract2.png" alt="" />
+              <button
+                class="slider__slide-flex-up-prev-header"
+                id="slider__slide-flex-up-prev-header"
+                onclick="sliderPrev(this)"
+              >
+                <div></div>
+              </button>
+              <button
+                class="slider__slide-flex-up-next-header"
+                id="slider__slide-flex-up-next-header"
+                onclick="sliderNext(this)"
+              >
+                <div></div>
+              </button>
+            </div>
+            <div class="slider__slide-flex-down">
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 45.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="slider__slide-info">
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-name">Проект «дом захаровых»</div>
+              <div class="slider__slide-info-price">8 402 000Руб</div>
+            </div>
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-property">
+                <div class="slider__slide-info-property-size">
+                  <img src="/image/Ruler Combined.png" alt="" />размер: 7х8
+                </div>
+                <div class="slider__slide-info-property-floor">
+                  <img src="/image/Home.png" alt="" />этажей: 2
+                </div>
+              </div>
+              <div class="slider__slide-info-button">смотреть проект</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__slide swiper-slide">
+          <div class="slider__slide-flex" id="slide">
+            <div class="slider__slide-flex-up slider__slide-flex-up-header">
+              <img src="/image/Subtract2.png" alt="" />
+              <button
+                class="slider__slide-flex-up-prev-header"
+                id="slider__slide-flex-up-prev-header"
+                onclick="sliderPrev(this)"
+              >
+                <div></div>
+              </button>
+              <button
+                class="slider__slide-flex-up-next-header"
+                id="slider__slide-flex-up-next-header"
+                onclick="sliderNext(this)"
+              >
+                <div></div>
+              </button>
+            </div>
+            <div class="slider__slide-flex-down">
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 45.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="slider__slide-info">
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-name">Проект «дом захаровых»</div>
+              <div class="slider__slide-info-price">8 402 000Руб</div>
+            </div>
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-property">
+                <div class="slider__slide-info-property-size">
+                  <img src="/image/Ruler Combined.png" alt="" />размер: 7х8
+                </div>
+                <div class="slider__slide-info-property-floor">
+                  <img src="/image/Home.png" alt="" />этажей: 2
+                </div>
+              </div>
+              <div class="slider__slide-info-button">смотреть проект</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="slider__wrapper-header swiper-wrapper"
+        id="slider__wrapper-header-down"
+      >
+        <div class="slider__slide swiper-slide" id="slide">
+          <div class="slider__slide-flex">
+            <div class="slider__slide-flex-up slider__slide-flex-up-header">
+              <img src="/image/Subtract2.png" alt="" />
+              <button
+                class="slider__slide-flex-up-prev-header"
+                id="slider__slide-flex-up-prev-header-down"
+                onclick="sliderPrev(this)"
+              >
+                <div></div>
+              </button>
+              <button
+                class="slider__slide-flex-up-next-header"
+                id="slider__slide-flex-up-next-header-up"
+                onclick="sliderNext(this)"
+              >
+                <div></div>
+              </button>
+            </div>
+            <div class="slider__slide-flex-down">
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 45.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="slider__slide-info">
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-name">Проект «дом захаровых»</div>
+              <div class="slider__slide-info-price">8 402 000Руб</div>
+            </div>
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-property">
+                <div class="slider__slide-info-property-size">
+                  <img src="/image/Ruler Combined.png" alt="" />размер: 7х8
+                </div>
+                <div class="slider__slide-info-property-floor">
+                  <img src="/image/Home.png" alt="" />этажей: 2
+                </div>
+              </div>
+              <div class="slider__slide-info-button">смотреть проект</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__slide swiper-slide" id="slide">
+          <div class="slider__slide-flex">
+            <div class="slider__slide-flex-up slider__slide-flex-up-header">
+              <img src="/image/Subtract2.png" alt="" />
+              <button
+                class="slider__slide-flex-up-prev-header"
+                id="slider__slide-flex-up-prev-header-down"
+                onclick="sliderPrev(this)"
+              >
+                <div></div>
+              </button>
+              <button
+                class="slider__slide-flex-up-next-header"
+                id="slider__slide-flex-up-next-header-up"
+                onclick="sliderNext(this)"
+              >
+                <div></div>
+              </button>
+            </div>
+            <div class="slider__slide-flex-down">
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 45.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="slider__slide-info">
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-name">Проект «дом захаровых»</div>
+              <div class="slider__slide-info-price">8 402 000Руб</div>
+            </div>
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-property">
+                <div class="slider__slide-info-property-size">
+                  <img src="/image/Ruler Combined.png" alt="" />размер: 7х8
+                </div>
+                <div class="slider__slide-info-property-floor">
+                  <img src="/image/Home.png" alt="" />этажей: 2
+                </div>
+              </div>
+              <div class="slider__slide-info-button">смотреть проект</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__slide swiper-slide" id="slide">
+          <div class="slider__slide-flex">
+            <div class="slider__slide-flex-up slider__slide-flex-up-header">
+              <img src="/image/Subtract2.png" alt="" />
+              <button
+                class="slider__slide-flex-up-prev-header"
+                id="slider__slide-flex-up-prev-header-down"
+                onclick="sliderPrev(this)"
+              >
+                <div></div>
+              </button>
+              <button
+                class="slider__slide-flex-up-next-header"
+                id="slider__slide-flex-up-next-header-up"
+                onclick="sliderNext(this)"
+              >
+                <div></div>
+              </button>
+            </div>
+            <div class="slider__slide-flex-down">
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 45.png" alt="" />
+              </div>
+              <div class="slider__slide-flex-down-item">
+                <img src="/image/Rectangle 43.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="slider__slide-info">
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-name">Проект «дом захаровых»</div>
+              <div class="slider__slide-info-price">8 402 000Руб</div>
+            </div>
+            <div class="slider__slide-info-wrapper">
+              <div class="slider__slide-info-property">
+                <div class="slider__slide-info-property-size">
+                  <img src="/image/Ruler Combined.png" alt="" />размер: 7х8
+                </div>
+                <div class="slider__slide-info-property-floor">
+                  <img src="/image/Home.png" alt="" />этажей: 2
+                </div>
+              </div>
+              <div class="slider__slide-info-button">смотреть проект</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="discount">
+        <div class="container">
+          <div class="discount__title">
+            Расчитайте стоимость и получите<span> скидку до 500 000руб</span>
+          </div>
+          <div class="discount__body">
+            <div class="discount__body-question">
+              <div class="discount__body-question-item">
+                <div class="discount__body-question-item-wrapper">
+                <div class="discount__body-question-count">
+                  Вопрос <span>1</span> из 10
+                </div>
+                <div class="discount__body-question-progress">  <div id = "bar" ></div></div>
+                <div class="discount__body-question-text">
+                  Когда планируете начать строительство?
+                </div>
+              </div>
+                <div class="discount__body-question-wrapper">
+                  
+               
+                </div>
+                <div class="discount__body-question-button-wrapper">
+                  <div class="discount__body-question-button-back" onclick="question_back()">
+                    <div></div>
+                    назад
+                  </div>
+                  <div class="discount__body-question-button-forth" value = "0" onclick="question_next()">
+                    далее
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="discount__body-info">
+              <div class="discount__body-info-item">
+                <div class="discount__body-info-item-wrapper">
+                  <div class="discount__body-info-image">
+                    <img src="/image/image 53.png" alt="" />
+                  </div>
+                  <div class="discount__body-info-name">
+                    <span>Иван петрович </span> <br />генеральный директор
+                  </div>
+                </div>
+                <div class="discount__body-info-footer">
+                  <img src="/image/иконка планировкаA.png" alt="" />
+                </div>
+                <img
+                  src="/image/каска.png"
+                  class="discount__body-info-helmet"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider__title">
+          <span> готовые проекты</span> и<br />
+          цены на строительство
+        </div>
+        <div class="slider__wrapper swiper-wrapper">
+          <div class="slider__slide swiper-slide">
+            <div class="slider__slide-flex">
+              <div class="slider__slide-flex-up">
+                <img src="/image/Subtract.png" alt="" />
+                <button class="slider__slide-flex-up-prev"><div></div></button>
+                <button class="slider__slide-flex-up-next"><div></div></button>
+              </div>
+              <div class="slider__slide-flex-down">
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide-info">
+              <div class="slider__slide-info-wrapper">
+                <div class="slider__slide-info-name">
+                  Проект «дом захаровых»
+                </div>
+                <div class="slider__slide-info-price">8 402 000Руб</div>
+              </div>
+              <div class="slider__slide-info-wrapper">
+                <div class="slider__slide-info-property">
+                  <div class="slider__slide-info-property-size">
+                    <img src="/image/Ruler Combined.png" alt="" />размер: 7х8
+                  </div>
+                  <div class="slider__slide-info-property-floor">
+                    <img src="/image/Home.png" alt="" />этажей: 2
+                  </div>
+                </div>
+                <div class="slider__slide-info-button">смотреть проект</div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__slide swiper-slide">
+            <div class="slider__slide-flex">
+              <div class="slider__slide-flex-up">
+                <img src="/image/Subtract.png" alt="" />
+                <button class="slider__slide-flex-up-prev"><div></div></button>
+                <button class="slider__slide-flex-up-next"><div></div></button>
+              </div>
+              <div class="slider__slide-flex-down">
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide-info">
+              <div class="slider__slide-info-wrapper">
+                <div class="slider__slide-info-name">
+                  Проект «дом захаровых»
+                </div>
+                <div class="slider__slide-info-price">8 402 000Руб</div>
+              </div>
+              <div class="slider__slide-info-wrapper">
+                <div class="slider__slide-info-property">
+                  <div class="slider__slide-info-property-size">
+                    <img src="/image/Ruler Combined.png" alt="" />размер: 7х8
+                  </div>
+                  <div class="slider__slide-info-property-floor">
+                    <img src="/image/Home.png" alt="" />этажей: 2
+                  </div>
+                </div>
+                <div class="slider__slide-info-button">смотреть проект</div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__slide swiper-slide">
+            <div class="slider__slide-flex">
+              <div class="slider__slide-flex-up">
+                <img src="/image/Subtract.png" alt="" />
+                <button class="slider__slide-flex-up-prev"><div></div></button>
+                <button class="slider__slide-flex-up-next"><div></div></button>
+              </div>
+              <div class="slider__slide-flex-down">
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide-info">
+              <div class="slider__slide-info-wrapper">
+                <div class="slider__slide-info-name">
+                  Проект «дом захаровых»
+                </div>
+                <div class="slider__slide-info-price">8 402 000Руб</div>
+              </div>
+              <div class="slider__slide-info-wrapper">
+                <div class="slider__slide-info-property">
+                  <div class="slider__slide-info-property-size">
+                    <img src="/image/Ruler Combined.png" alt="" />размер: 7х8
+                  </div>
+                  <div class="slider__slide-info-property-floor">
+                    <img src="/image/Home.png" alt="" />этажей: 2
+                  </div>
+                </div>
+                <div class="slider__slide-info-button">смотреть проект</div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__slide swiper-slide">
+            <div class="slider__slide-flex">
+              <div class="slider__slide-flex-up">
+                <img src="/image/Subtract.png" alt="" />
+                <button class="slider__slide-flex-up-prev"><div></div></button>
+                <button class="slider__slide-flex-up-next"><div></div></button>
+              </div>
+              <div class="slider__slide-flex-down">
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+                <div class="slider__slide-flex-down-item">
+                  <img src="/image/Rectangle 43.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide-info">
+              <div class="slider__slide-info-wrapper">
+                <div class="slider__slide-info-name">
+                  Проект «дом захаровых»
+                </div>
+                <div class="slider__slide-info-price">8 402 000Руб</div>
+              </div>
+              <div class="slider__slide-info-wrapper">
+                <div class="slider__slide-info-property">
+                  <div class="slider__slide-info-property-size">
+                    <img src="/image/Ruler Combined.png" alt="" />размер: 7х8
+                  </div>
+                  <div class="slider__slide-info-property-floor">
+                    <img src="/image/Home.png" alt="" />этажей: 2
+                  </div>
+                </div>
+                <div class="slider__slide-info-button">смотреть проект</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__project">
+          <div class="slider__project-button">заказать проект</div>
+          <div class="slider__project-text">
+            Выбирайте свой вариант из 17 <br />
+            готовых решений или закажите <br />
+            индивидуальный проект <span>*</span>
+          </div>
+        </div>
+      </div>
+      <div class="development">
+        <div class="container">
+          <div class="development__flex-wrapper">
+            <div class="development__info">
+              <div class="development__info-text">
+                <div class="development__info-text-title">
+                  разработайте <span>проект под себя</span>
+                </div>
+                <div class="development__info-text-subtitle">
+                  <div class="consultation__info-text-subtitle-square-wrapper">
+                    <div
+                      class="consultation__info-text-subtitle-square-left"
+                    ></div>
+                    <div class="consultation__info-text-subtitle-square"></div>
+                    <div
+                      class="consultation__info-text-subtitle-square-right"
+                    ></div>
+                  </div>
+                  <div class="">
+                    Получите консультацию, разработайте дизайн-проект, создайте
+                    план коммуникации удобный именно вам
+                  </div>
+                </div>
+              </div>
+              <div class="development__info-image">
+                <img src="/image/Group 8 (1).png" alt="" />
+              </div>
+            </div>
+            <div class="development__form-wrapper">
+              <div class="development__form-wrapper-title">
+                <span>Заполните форму</span> <br />
+                и мы перезвоним вам в течении 10 минут
+              </div>
+              <form action="" class="development__form-wrapper-form">
+                <input
+                  type="text"
+                  class="development__form-wrapper-input-name"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  type="text"
+                  class="development__form-wrapper-input-phone"
+                  placeholder="Ваш номер телефона"
+                />
+                <button type="submit" class="development__form-wrapper-button">
+                  оставить заявку
+                </button>
+              </form>
+              <input
+                type="checkbox"
+                name="checkbox__agreement"
+                class="development__form-wrapper-input-agreement"
+              />
+              <label for="checkbox__agreement"
+                >Я принимаю условия обработки персональных данных</label
+              >
+              <div class="development__form-helmet-image">
+                <img src="/image/Без имени-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="task">
+        <div class="container">
+          <div class="task__image">
+            <img src="/image/image 222.png" alt=""  class="task__image-main">
+            <img src="/image/Group 29.png" alt="" class="task__image-adaptive">
+            <div class="task__title">
+              <span>наша задача </span> сделать для вас:
+            </div>
+          </div>
+          
+          <!-- <div class="task__body">
+          <div class="task__body-task-home-image">
+            <img src="/image/Mask group (3).png" alt="" />
+            <div class="task__body-task-list">
+              <li class="task__body-task-list-item">  <img src="/image/иконка безопасный дом.png" alt=""> Безопасный и долговечный дом </li>
+                <li class="task__body-task-list-item"><img src="/image/иконка камин+стул.png" alt="">Комфорт и уют вам и вашей семье </li>
+                <li class="task__body-task-list-item"><img src="/image/иконка планировк.png" alt="">Продуманную планировку и систему коммуникаций </li>
+              <div class="task__body-task-list-item">
+                <img src="/image/иконка безопасный дом.png" alt="" /> Безопасный
+                и <br />
+                долговечный дом
+              </div>
+              <div class="task__body-task-list-item">
+                <img src="/image/иконка камин+стул.png" alt="" />Комфорт и уют
+                <br />
+                вам и вашей семье
+              </div>
+              <div class="task__body-task-list-item">
+                <img src="/image/иконка планировк.png" alt="" />Продуманную
+                <br />
+                планировку и систему <br />
+                коммуникаций
+              </div>
+            </div>
+            <img
+              class="task__body-plus-image-before"
+              src="/image/Group 6.png"
+              alt=""
+            />
+            <img
+              class="task__body-plus-image"
+              src="/image/Group 6.png"
+              alt=""
+            />
+            <img
+              class="task__body-plus-image-after"
+              src="/image/Group 6.png"
+              alt=""
+            />
+          </div>
+        </div> -->
+        </div>
+      </div>
+      <div class="human">
+        <div class="container">
+          <div class="human__body">
+            <div class="human__body-item">
+              <div class="human__body-item-text">
+                <span>Уважение к клиенту - наше основное правило.</span> Мы
+                всегда учитываем требования и пожелания клиента и стараемся
+                выполнить все его заказы в полном объеме. <br /><br /><span>
+                  Открытость и прозрачность</span
+                >
+                - это наша философия работы.
+              </div>
+              <div class="human__body-item-info">
+                <div class="human__body-item-info-name">
+                  данилова<br />
+                  <span> марина вадимовна</span>
+                </div>
+                <div class="human__body-item-info-post">
+                  Учредитель, руководитель, эксперт по недвижимости
+                </div>
+              </div>
+              <img
+                src="/image/ph-13-PhotoRoom 1.png"
+                alt=""
+                class="human__body-item-image-women"
+              />
+            </div>
+            <div class="human__body-item">
+              <div class="human__body-item-info">
+                <div class="human__body-item-info-name">
+                  данилов <br /><span> Иван петрович</span>
+                </div>
+                <div class="human__body-item-info-post">
+                  Основатель, генеральный директор
+                </div>
+              </div>
+              <div class="human__body-item-text">
+                <span> Мы соблюдаемвсе нормы требования к материалам, </span
+                >чтобы клиент остался доволен нашей работой. <br /><br />
+                Мы планируем все работы заранее и
+                <span>
+                  следим за выполнением плана, чтобы небыло задержек.</span
+                >
+              </div>
+              <img
+                src="/image/ph-3-PhotoRoom 1.png"
+                alt=""
+                class="human__body-item-image-man"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="choice">
+        <div class="container">
+          <div class="choice__title">
+            а вы уже <span>сделали свой выбор?</span>
+          </div>
+          <div class="choice__body">
+            <div class="choice__body-item">
+              <ul class="choice__body-item-ul">
+                <li class="choice__body-item-ul-li">
+                  <span class = "choice__body-item-ul-li-number">01</span> <span class="white">Долго и дорого,</span> потратите больше денег на
+                  материалы
+                </li>
+                <li class="choice__body-item-ul-li">
+                  <span class = "choice__body-item-ul-li-number">02</span> <span class="white">Легко ошибится,</span> так как строительство требует
+                  знаний и опыта
+                </li>
+                <li class="choice__body-item-ul-li">
+                  <span class = "choice__body-item-ul-li-number">03</span><span class="white">Строительство может растянуться на годы</span> или
+                  остаться недостроем похоронив то, что было вложено за все
+                  время
+                </li>
+              </ul>
+              <div class="choice__body-item-title">строить самим</div>
+            </div>
+            <div class="choice__body-pointer">
+              <img src="/image/image 230.png" alt="" />
+            </div>
+            <div class="choice__body-item">
+              <div class="choice__body-item-title">
+                <img src="/image/логотип.png" alt="" />
+              </div>
+              <ul class="choice__body-item-ul">
+                <li class="choice__body-item-ul-li">
+                  <span class = "choice__body-item-ul-li-number">01</span> <span class="black">Быстро - получите готовый дом от 120 дней</span> +
+                  экономия личного времени
+                </li>
+                <li class="choice__body-item-ul-li">
+                  <span class = "choice__body-item-ul-li-number">02</span> <span class="black">Выгодная стоимость материалов,</span>благодаря
+                  закупке по оптовым ценам
+                </li>
+                <li class="choice__body-item-ul-li">
+                  <span class = "choice__body-item-ul-li-number">03</span> Над строительством <span class="black">работает команда
+                  профессионалов</span>
+                </li>
+                <li class="choice__body-item-ul-li">
+                  <span class = "choice__body-item-ul-li-number">04</span> <span class="black">Гарантия на дом 5 лет</span> закреплена договором
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience">
+        <div class="container">
+          <div class="experience__body">
+            <div class="experience__body-item">
+              <span>3 года</span> дарим уют своим клиентам
+            </div>
+            <div class="experience__body-item">
+              <span>120+ </span>объектов было построенно
+            </div>
+            <div class="experience__body-item">
+              <span>5 ЛЕТ</span> гарантии на строительство
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="container">
+          <div class="reviews__body">
+            <div class="reviews__body-text">
+              <div class="reviews__body-text-title">
+                <span>Видеообзоры и отзывы </span> о наших проектах
+              </div>
+              <div class="reviews__body-text-count-wrapper">
+                <img
+                  src="/image/100+.png"
+                  alt=""
+                  class="reviews__body-text-count-image"
+                />
+                <div class="reviews__body-text-count-text">
+                  <span>*</span> более 100 видеоотзывов и <br />видеообзоров на
+                  наши дома
+                </div>
+              </div>
+              <button class="reviews__body-text-button">
+                смотреть все видео<img src="/image/7 1.png" alt="" />
+              </button>
+            </div>
+            <div class="reviews__body-player">
+              <div class="reviews__body-player-wrapper" id="panel">
+                <div id="player"></div>
+                <button id="back" onclick="player.previousVideo();">
+                  <div class=""></div>
+                </button>
+
+                <button id="next" onclick="player.nextVideo();">
+                  <div class=""></div>
+                </button>
+              </div>
+              <div class="reviews__body-player-text">
+                <span>Отзыв хозяев</span> одноэтажного дома их бруса с открытой
+                терассой
+              </div>
+              <div class="reviews__body-player-subtext">
+                “небольшое описание как компания реализовала данный проект
+                небольшое описание как компания реализовала данный проект
+                небольшое описание как компания реализовала данный проект “
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="consultation">
+        <div class="container">
+          <div class="consultation__body">
+            <div class="consultation__form-wrapper">
+              <div class="consultation__form-wrapper-title">
+                Займет не больше 30 секунд
+              </div>
+              <form action="" class="consultation__form-wrapper-form">
+                <input
+                  type="text"
+                  class="consultation__form-wrapper-input-name"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  type="text"
+                  class="consultation__form-wrapper-input-phone"
+                  placeholder="Ваш номер телефона"
+                />
+                <button type="submit" class="consultation__form-wrapper-button">
+                  оставить заявку
+                </button>
+              </form>
+              <input
+                type="checkbox"
+                name="checkbox__agreement"
+                class="consultation__form-wrapper-input-agreement"
+              />
+              <label for="checkbox__agreement"
+                >Я принимаю условия обработки персональных данных</label
+              >
+              <img
+                src="/image/image 228 (1).png"
+                class="consultation__form-wrapper-image"
+                alt=""
+              />
+            </div>
+            <div class="consultation__info">
+              <div class="consultation__info-text">
+                <div class="consultation__info-text-title">
+                  запишитесь <span> на бесплатную консультацию </span>
+                </div>
+                <div class="consultation__info-text-subtitle">
+                  <div class="consultation__info-text-subtitle-square-wrapper">
+                    <div
+                      class="consultation__info-text-subtitle-square-left"
+                    ></div>
+                    <div class="consultation__info-text-subtitle-square"></div>
+                    <div
+                      class="consultation__info-text-subtitle-square-right"
+                    ></div>
+                  </div>
+                  <div class="">
+                    <span> Дадим рекомендации</span> по подбору участка для
+                    строительства, выбору материалов и вариантов проектировки.
+                    <br /><br />
+                    <span> Вместе расчитаем стоимость строительства </span
+                    >вашего будущего дома
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stages">
+        <div class="container">
+          <div class="stages__body">
+            <div class="stages__body-title stages__body-flex-item-position3">
+              <span>6 ЭТАПОВ</span> СТРОИТЕЛЬСТВА ВАШЕГО БУДУЩЕГО ДОМА
+              <img
+                src="/image/list59.png"
+                alt=""
+                class="stages__body-flex-item-list3"
+              />
+            </div>
+            <div class="stages__body-flex-wrapper">
+              <div class="stages__body-flex-item-wrapper">
+                <div
+                  class="stages__body-flex-item stages__body-flex-item-border "
+                >
+                  <div class="stages__body-flex-item-number">01</div>
+                  <div class="stages__body-flex-item-purpose">
+                    Выезд на участок
+                  </div>
+                  <div class="stages__body-flex-item-text">
+                    Произведем осмотр участка, оценим рельеф местности и
+                    необходимость отсыпки, определим местоположение дома с
+                    учётом сторон света
+                  </div>
+                  <img
+                    src="/image/Rectangle 79.png"
+                    alt=""
+                    class="stages__body-flex-item-image-left"
+                  />
+                  <img
+                    src="/image/Rectangle 81.png"
+                    alt=""
+                    class="stages__body-flex-item-image-right"
+                  />
+                </div>
+                <div
+                  class="stages__body-flex-item stages__body-flex-item-position1"
+                >
+                  <div class="stages__body-flex-item-number">02</div>
+                  <div class="stages__body-flex-item-purpose">
+                    Выезд на участок
+                  </div>
+                  <div class="stages__body-flex-item-text">
+                    Определим размер дома, его планировку, этажность, наличие
+                    терассы и его площади
+                  </div>
+                  <img
+                    src="/image/list57.png"
+                    alt=""
+                    class="stages__body-flex-item-list1"
+                  />
+                </div>
+                <div
+                  class="stages__body-flex-item stages__body-flex-item-border stages__body-flex-item-right"
+                >
+                  <div class="stages__body-flex-item-number">03</div>
+                  <div class="stages__body-flex-item-purpose">
+                    Утверждение проекта
+                  </div>
+                  <div class="stages__body-flex-item-text">
+                    Разработаем и согласуем проект с учетом ваших пожеланий
+                  </div>
+                  <img
+                    src="/image/Rectangle 79.png"
+                    alt=""
+                    class="stages__body-flex-item-image-left"
+                  />
+                  <img
+                    src="/image/Rectangle 81.png"
+                    alt=""
+                    class="stages__body-flex-item-image-right"
+                  />
+                </div>
+              </div>
+              <div class="stages__body-flex-item-wrapper">
+                <div class="stages__body-flex-item stages__body-flex-item-right">
+                  <div class="stages__body-flex-item-number">04</div>
+                  <div class="stages__body-flex-item-purpose">
+                    Сбор документов
+                  </div>
+                  <div class="stages__body-flex-item-text">
+                    Проконтролируем соответствие проектному плану, осуществим
+                    закупку материалов
+                  </div>
+                </div>
+                <div
+                  class="stages__body-flex-item stages__body-flex-item-border"
+                >
+                  <div class="stages__body-flex-item-number">05</div>
+                  <div class="stages__body-flex-item-purpose">
+                    Подписание документов
+                  </div>
+                  <div class="stages__body-flex-item-text">
+                    Выберем удобный способ оплаты и подпишем договор
+                  </div>
+                  <img
+                    src="/image/Rectangle 83.png"
+                    alt=""
+                    class="stages__body-flex-item-image-right-b"
+                  />
+                  <img
+                    src="/image/Rectangle 82.png"
+                    alt=""
+                    class="stages__body-flex-item-image-left-b"
+                  />
+                </div>
+                <div
+                  class="stages__body-flex-item stages__body-flex-item-position2"
+                >
+                  <div class="stages__body-flex-item-number">06</div>
+                  <div class="stages__body-flex-item-purpose">Заключение</div>
+                  <div class="stages__body-flex-item-text">
+                    Акт приема-передачи объекта. Завершение работы
+                  </div>
+                  <img
+                    src="/image/image 58.png"
+                    alt=""
+                    class="stages__body-flex-item-list2"
+                  />
+                </div>
+              </div>
+              <img
+                src="/image/Group 35.png"
+                class="stages__body-flex-wrapper-image"
+                alt=""
+              />
+            </div>
+            <div class="slider__project">
+              <div class="slider__project-button">заказать проект</div>
+              <div class="slider__project-text">
+                Выбирайте свой вариант из 17 <br />
+                готовых решений или закажите <br />
+                индивидуальный проект <span>*</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="team__body">
+          <div class="team__body-title">
+            НАД вашим проектом РАБОТАЕТ <span>КОМАНДА ПРОФЕССИОНАЛОВ</span>
+          </div>
+          <div class="team__body-image">
+            <img src="/image/image 231.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="bank">
+        <div class="container">
+          <div class="bank__header">
+            <div class="bank__header-qr">
+              <img src="/image/qr.png" alt="" />АО «Почта Банк»
+            </div>
+            <div class="bank__header-logo">
+              <img src="/image/pochta.png" alt="" />
+            </div>
+          </div>
+          <div class="bank__main">
+            <div class="bank__main-item-left">
+              <div class="bank__main-item-left-text-up">
+                КРЕДИТ НА СТРОИТЕЛЬСТВО
+              </div>
+              <div class="bank__main-item-left-text-down">ОТ ПОЧТА БАНКА</div>
+            </div>
+            <div class="bank__main-item-right">
+              <img src="/image/image 57.png" alt="" />
+            </div>
+          </div>
+          <div class="bank__footer">
+            <button class="bank__footer-button-red bank__footer-button">
+              ОФОРМИТЬ
+            </button>
+            <button class="bank__footer-button-blue bank__footer-button">
+              ПОДБРОБНЕЕ
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="maps">
+        
+        <div class="container">
+          <div class="maps__body">
+            <ul class="maps__body-ul">
+              <div class="maps__body-contact">
+                контакты
+                <br />
+                <span>
+                  наш офис <br />открыт для вас <br />6 дней в неделю
+                </span>
+              </div>
+              <li class="maps__body-li">
+                <img
+                  src="/image/Mask group (6).png"
+                  alt=""
+                  class="maps__body-li-image"
+                />+7 (4112) 25-88-88 <br />
+                +7 (9142) 71-21-21
+              </li>
+              <li class="maps__body-li">
+                <img
+                  src="/image/Mask group (5).png"
+                  alt=""
+                  class="maps__body-li-image"
+                />ipoteca.2021@mail.ru
+              </li>
+              <li class="maps__body-li">
+                <img
+                  src="/image/Mask Group (4).png"
+                  alt=""
+                  class="maps__body-li-image"
+                />г. Якутск, ул. Аммосова 18 <br />
+                5 этаж, офис 504, 5/2 <br />
+                вход со стороны Аммосова
+              </li>
+              <li class="maps__body-li">
+                <img
+                  src="/image/Mask group (3)1.png"
+                  alt=""
+                  class="maps__body-li-image"
+                />ПН-СБ с 9:00 до 18:00 <br />
+                обед 13:00-14:00
+              </li>
+            </ul>
+            <img src="/image/image 24.png" alt="" class="maps__body-image" />
+          </div>
+        </div>
+        <div class="maps__image"><img src="/image/image 59.png" alt="" /></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <div class="footer__body-item-left">
+            <div class="footer__body-item-left-title">
+              <img src="/image/лого в подвале.png" alt="" />
+            </div>
+            <div class="footer__body-item-left-contact">
+              <div class="footer__body-item-left-contact-image">
+                <img src="/image/tg.png" alt="" /><img
+                  src="/image/vk.png"
+                  alt=""
+                /><img src="/image/y.png" alt="" />
+              </div>
+              <div class="footer__body-item-left-contact-text">
+                <img src="/image/arrow.png" alt="" />Подписывайтесь <br />
+                на наши соц.сети
+              </div>
+            </div>
+            <div class="footer__body-item-left-questions ">
+              Остались вопросы?
+              <div class="">
+                <img src="/image/phone_gold.png" alt="" />Заказать звонок
+              </div>
+            </div>
+          </div>
+          <div class="footer__body-item-center">
+            <div class="footer__body-item-center-ip">
+              <div class="footer__body-item-center-ip-title">
+                ИП Данилов Иван Петрович
+              </div>
+              <div class="footer__body-item-center-ip-info">
+                ИНН 142700595130
+                <br />
+                ОГРН 319144700058807
+              </div>
+            </div>
+            <div class="footer__body-item-center-ip">
+              <div class="footer__body-item-center-ip-title">
+                ИП Данилова Марина Вадимовна
+              </div>
+              <div class="footer__body-item-center-ip-info">
+                ИНН 141001739242 <br />ОГРН 318044700048057
+              </div>
+            </div>
+            <div class="footer__body-item-center-ip-politick">
+              Политика конфиденциальности
+            </div>
+          </div>
+          <div class="footer__body-item-right">
+            <ul class="footer__body-item-right-info">
+              <div class="footer__body-item-right-title">ООО «Шишкин Дом»</div>
+              <li>ИНН 1400002290</li>
+              <li>КПП 140001001</li>
+              <li>
+                Расчетный счёт: <br />
+                40702810102500116207
+              </li>
+              <li>
+                Название банка: Точка ПАО <br />
+                Банка «ФК Открытие», г.Москва
+              </li>
+              <li>БИК 044525999</li>
+              <li>
+                Кор.счёт: <br />
+                30101810845250000999
+              </li>
+            </ul>
+            <div class="footer__body-item-center-ip-politick-adaptive">
+              Политика конфиденциальности
+            </div>
+          </div>
+          <div class="footer__body-item-left-questions-adaptive">
+            Остались вопросы?
+            <div class="">
+              <img src="/image/phone_gold.png" alt="" />Заказать звонок
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="/js/event.js"></script>
+    <script type="text/javascript" src="/module/slick/slick.min.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script src="/js/player.js"></script>
+  </body>
+</html>
