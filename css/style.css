@@ -701,7 +701,7 @@ body {
   justify-content: center;
 }
 .discount__body-info-footer {
-  background-image: url("/image/иконка планировка.png");
+  background-image: url("image/иконка планировка.png");
   width: 312px;
   height: 225px;
   background-repeat: no-repeat;
