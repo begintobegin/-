@@ -232,11 +232,11 @@ a {
 
 @font-face {
   font-family: "RoadRadio";
-  src: url(fonts/roadradio_bold.otf);
+  src: url(../fonts/roadradio_bold.otf);
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url(fonts/gothampro.ttf);
+  src: url(../fonts/gothampro.ttf);
 }
 body {
   font-family: "Gotham Pro";
