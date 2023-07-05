@@ -1455,10 +1455,7 @@ body {
     text-align: center;
   }
   .reviews__body-text-button img {
-    position: absolute;
-    bottom: 0;
-    right: -29px;
-    width: 135px;
+  display:none;
   }
   .reviews__body-player-wrapper iframe {
     width: 300px;
