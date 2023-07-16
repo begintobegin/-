@@ -232,11 +232,11 @@ a {
 
 @font-face {
   font-family: "RoadRadio";
-  src: url(../fonts/roadradio_bold.otf);
+  src: url(/fonts/roadradio_bold.otf);
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url(../fonts/gothampro.ttf);
+  src: url(/fonts/gothampro.ttf);
 }
 body {
   font-family: "Gotham Pro";
@@ -269,9 +269,25 @@ body {
   font-weight: 700;
 }
 
+.header {
+  position: relative;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.header__image_1 {
+  position: absolute;
+  bottom: 80px;
+  right: 0px;
+}
+.header__image_2 {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+}
 .header__nav {
   display: flex;
-  margin-top: 63px;
   text-align: center;
   align-items: center;
 }
@@ -401,6 +417,7 @@ body {
 }
 .header__body {
   margin-top: 120px;
+  display: none;
 }
 .header__body-title {
   width: 600px;
@@ -461,7 +478,7 @@ body {
   padding-left: 10px;
 }
 .header__footer {
-  display: flex;
+  display: none;
   margin-top: 100px;
 }
 @media (max-width: 900px) {
@@ -704,7 +721,7 @@ body {
   justify-content: center;
 }
 .discount__body-info-footer {
-  background-image: url("../image/иконка планировка.png");
+  background-image: url("/image/иконка планировка.png");
   width: 312px;
   height: 225px;
   background-repeat: no-repeat;
@@ -802,7 +819,7 @@ body {
 }
 .slider__slide-flex-down {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .slider__slide-flex-down-item {
   margin-top: 20px;
@@ -1135,12 +1152,13 @@ body {
 .human__body-item {
   width: 340px;
   position: relative;
+  margin: 0px -15px;
   z-index: 5;
 }
 .human__body-item-image-women {
   position: absolute;
   top: -31px;
-  left: 190px;
+  left: 243px;
   z-index: -2;
 }
 .human__body-item-image-man {
@@ -1280,7 +1298,7 @@ body {
   font-size: 35px;
   line-height: 62px;
   text-align: center;
-  background: #f5f5f5;
+  background: white;
   border-radius: 50%;
   position: absolute;
   left: -65px;
@@ -1455,7 +1473,7 @@ body {
     text-align: center;
   }
   .reviews__body-text-button img {
-  display:none;
+    display: none;
   }
   .reviews__body-player-wrapper iframe {
     width: 300px;
@@ -1524,6 +1542,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin-bottom: 100px;
+  margin-top: 300px;
 }
 .consultation__form-wrapper {
   background: linear-gradient(149.97deg, #ffdd56 12.71%, #ffec83 92.47%);
@@ -1537,7 +1556,7 @@ body {
 .consultation__form-wrapper-image {
   position: absolute;
   top: -200px;
-  left: -300px;
+  left: -335px;
   z-index: -1;
 }
 .consultation__form-wrapper-title {
@@ -1599,6 +1618,7 @@ body {
 }
 .consultation__info {
   flex-grow: 1;
+  margin-left: 56px;
 }
 .consultation__info-text-title {
   font-weight: 700;
@@ -1649,7 +1669,7 @@ body {
   border: 2px solid #a3764c;
   border-radius: 2px;
 }
-@media (max-width: 965px) {
+@media (max-width: 980px) {
   .consultation__body {
     flex-direction: column-reverse;
     align-items: center;
@@ -1657,6 +1677,7 @@ body {
   .consultation__info {
     margin-bottom: 30px;
     text-align: center;
+    margin-left: 0px;
   }
   .consultation__form-wrapper {
     width: auto;
@@ -1858,15 +1879,19 @@ body {
   color: #a3764c;
 }
 .team__body-image {
+  position: relative;
+  margin-top: 35%;
   text-align: center;
 }
 .team__body-image img {
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .maps {
   position: relative;
-  text-align: center;
 }
 .maps__image {
   position: absolute;
@@ -1934,7 +1959,10 @@ body {
   height: 29px;
   margin-right: 18px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .maps {
+    text-align: center;
+  }
   .maps__body {
     background: linear-gradient(149.97deg, #ffdd56 12.71%, #ffec83 92.47%);
     border-radius: 20px;
@@ -2144,6 +2172,10 @@ body {
   line-height: 14px;
   margin-right: 300px;
   color: #ffffff;
+  margin-bottom: 10px;
+}
+.bank__header-qr img {
+  margin-bottom: 10px;
 }
 .bank__main {
   display: flex;
@@ -2247,7 +2279,7 @@ body {
     font-family: "RoadRadio";
     font-style: normal;
     font-weight: 700;
-    font-size: 31px;
+    font-size: 36px;
     line-height: 43px;
     text-align: center;
     background: linear-gradient(270.38deg, rgb(49, 39, 131) 4.98%, rgb(72, 65, 184) 100.06%);
@@ -2265,7 +2297,7 @@ body {
     font-family: "RoadRadio";
     font-style: normal;
     font-weight: 700;
-    font-size: 23px;
+    font-size: 30px;
     line-height: 37px;
     background: linear-gradient(270.38deg, #e90155 4.98%, #c11446 100.06%);
     border-radius: 5px;
@@ -2288,16 +2320,15 @@ body {
   position: relative;
 }
 .slider__slide-flex-up-header img {
-  width: 500px;
-  height: 302px;
+  width: 100%;
 }
 .slider__slide-flex-up-prev-header {
   width: 60px;
   height: 60px;
   background: #ffec83;
   position: absolute;
-  top: 121px;
-  left: -10px;
+  top: 40%;
+  left: -27px;
   border-radius: 50%;
 }
 .slider__slide-flex-up-prev-header div {
@@ -2307,15 +2338,15 @@ body {
   border-top: 2px solid #a3764c;
   border-right: 2px solid #a3764c;
   transform: rotate(-135deg);
-  margin-left: 22px;
+  margin-left: 12px;
 }
 .slider__slide-flex-up-next-header {
   width: 60px;
   height: 60px;
   background: #ffec83;
   position: absolute;
-  top: 120px;
-  right: -10px;
+  top: 40%;
+  right: -27px;
   border-radius: 50%;
 }
 .slider__slide-flex-up-next-header div {
@@ -2325,5 +2356,45 @@ body {
   border-top: 2px solid #a3764c;
   border-right: 2px solid #a3764c;
   transform: rotate(45deg);
-  margin-left: 12px;
+  margin-left: 11px;
+}
+.slider__slide-flex-down-item img {
+  width: 100%;
+  height: 100%;
+}
+.slider__slide-flex-down-item-header img {
+  width: 100px;
+  height: 100%;
+}
+@media (max-width: 1600px) {
+  .slider__slide-flex-up-prev-header {
+    width: 44px;
+    height: 43px;
+    top: 145px;
+    left: -17px;
+  }
+  .slider__slide-flex-up-next-header {
+    width: 44px;
+    height: 43px;
+    top: 145px;
+    right: -17px;
+  }
+  .slider__wrapper-header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  .slider__slide-flex-up-prev-header {
+    width: 44px;
+    height: 43px;
+    top: 87px;
+    left: -22px;
+  }
+  .slider__slide-flex-up-next-header {
+    width: 44px;
+    height: 43px;
+    top: 87px;
+    right: -22px;
+  }
 }
