@@ -41,7 +41,7 @@ let SwiperHeader = document.querySelector(".slider__wrapper-header");
   headerfooter.style.display = "none";
   SwiperHeader.style.display = "flex";
  }else{
-  headerMain.style.backgroundImage="url('../image/image 237.png'";
+  headerMain.style.backgroundImage="url('image/image 237.png'";
  headerBody.style.display = "block";
  headerfooter.style.display = "flex";
  SwiperHeader.style.display = "none";
