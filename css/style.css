@@ -232,11 +232,11 @@ a {
 
 @font-face {
   font-family: "RoadRadio";
-  src: url(/fonts/roadradio_bold.otf);
+  src: url(../fonts/roadradio_bold.otf);
 }
 @font-face {
   font-family: "Gotham Pro";
-  src: url(/fonts/gothampro.ttf);
+  src: url(../fonts/gothampro.ttf);
 }
 body {
   font-family: "Gotham Pro";
@@ -721,7 +721,7 @@ body {
   justify-content: center;
 }
 .discount__body-info-footer {
-  background-image: url("/image/иконка планировка.png");
+  background-image: url("../image/иконка планировка.png");
   width: 312px;
   height: 225px;
   background-repeat: no-repeat;
