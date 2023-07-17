@@ -1,6 +1,6 @@
 function sliderNext(elem) {
   var image = getParent(elem, '#slide').getElementsByTagName('img');
-  console.log(image);
+
   let temp = image[0].src;
   image[0].src = image[1].src;
   image[1].src = image[2].src;
@@ -9,7 +9,7 @@ function sliderNext(elem) {
 }
 function sliderPrev(elem) {
   var image = getParent(elem, '#slide').getElementsByTagName('img');
-  console.log(image);
+
   let temp = image[1].src;
   image[1].src = image[0].src;
   image[0].src = image[3].src;
@@ -31,20 +31,30 @@ function getParent(elemSelector, parentSelector) {
   return null;
 }
 function eventclick(elem){
-let SwiperHeader = document.querySelector(".slider__wrapper-header");
+let SwiperHeader = document.querySelectorAll(".slider__wrapper-header");
  let headerMain = document.querySelector(".header");
  let headerBody = document.querySelector(".header__body");
  let headerfooter = document.querySelector(".header__footer");
- if(SwiperHeader.style.display == "none"){
+ if(SwiperHeader[0].style.display == "none"){
   headerMain.style.backgroundImage="none";
   headerBody.style.display = "none";
   headerfooter.style.display = "none";
-  SwiperHeader.style.display = "flex";
+  for (let index = 0; index < SwiperHeader.length; index++) {
+  
+  SwiperHeader[index].style.display = "flex";
+  
+}
+
  }else{
   headerMain.style.backgroundImage="url('image/image 237.png'";
  headerBody.style.display = "block";
  headerfooter.style.display = "flex";
- SwiperHeader.style.display = "none";
+for (let index = 0; index < SwiperHeader.length; index++) {
+ 
+ SwiperHeader[index].style.display = "none";
+  
+}
+
  }
 
 
