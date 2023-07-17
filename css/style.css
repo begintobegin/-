@@ -1327,9 +1327,12 @@ body {
   margin: -20px auto 0px auto;
   padding: 0px 0px;
 }
+.choice__body-pointer {
+  margin-top: 158px;
+}
 .choice__body-pointer img {
-  width: 550px;
-  height: 590px;
+  width: 599px;
+  height: 100%;
 }
 @media (max-width: 1113px) {
   .choice__body {
@@ -2321,6 +2324,7 @@ body {
 }
 .slider__slide-flex-up-header img {
   width: 100%;
+  height: 330px;
 }
 .slider__slide-flex-up-prev-header {
   width: 60px;
@@ -2396,5 +2400,8 @@ body {
     height: 43px;
     top: 87px;
     right: -22px;
+  }
+  .slider__slide-flex-up-header img {
+    height: 219px;
   }
 }
