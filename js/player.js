@@ -22,7 +22,7 @@ function onPlayerReady(event) {
 /*Загрузить плейлист*/			
 function loadPlaylistVideoIds(){
 	player.loadPlaylist({
-		'playlist': ['5tKPpS-lw4E', '5tKPpS-lw4E', '5tKPpS-lw4E', '5tKPpS-lw4E'],
+		'playlist': ['0EqByc92CfQ', 'BVA08cX-kTo', 'lco8qhshXyg', 'CbX3vjHv830', '3qsHveQjvJc', 'Dl_Uv6DYhu4', '7KKkCz0z9AI'],
 		'listType': 'playlist',
 		'index': 0,
 		'startSeconds': 0,
