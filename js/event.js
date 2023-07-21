@@ -46,7 +46,7 @@ let SwiperHeader = document.querySelectorAll(".slider__wrapper-header");
 }
 
  }else{
-  headerMain.style.backgroundImage="url('image/image 237.png'";
+  headerMain.classList.toggle('_img');
  headerBody.style.display = "block";
  headerfooter.style.display = "flex";
 for (let index = 0; index < SwiperHeader.length; index++) {
@@ -209,3 +209,11 @@ if('Backspace' != not){
      if(v.length === 13){phone.value= v +'-'}
     }
 }else{stop(e)}  }
+function slider_image(cont){
+  let MainImage = getParent(cont, '#sliderUp').getElementsByTagName('img')[0];
+  let n = '';
+  n = MainImage.src;
+  MainImage.src = cont.src;
+  cont.src = n;
+
+}
