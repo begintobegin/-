@@ -832,7 +832,7 @@ body {
   margin-top: 30px;
 }
 .slider__slide {
-  margin: 0px 45px;
+  margin: 20px 45px;
   width: 560px;
 }
 .slider__slide-flex {
@@ -866,7 +866,6 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   color: #505050;
-  margin-top: 47px;
 }
 .slider__slide-info-name {
   font-size: 22px;
