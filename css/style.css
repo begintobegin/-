@@ -1974,6 +1974,7 @@ body {
 
 .maps {
   position: relative;
+  text-align: center;
 }
 .maps__image {
   position: absolute;
