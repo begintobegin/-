@@ -270,21 +270,10 @@ body {
 }
 
 ._img {
-  background-image: url("../image/photo_2023-07-23_01-35-33.jpg");
+  background-image: url("../image/main_photo.jpg");
   padding-bottom: 100px;
 }
 
-@media (max-width: 900px) {
-  ._img {
-    padding-bottom: 600px;
-  }
-}
-@media (max-width: 500px) {
-  ._img {
-    background-image: url("../image/фон на главном экране.png");
-    background-size: 100% 100%;
-  }
-}
 /* maintain the square ratio */
 .header {
   position: relative;
@@ -546,10 +535,6 @@ body {
     flex-direction: column;
     width: 300px;
     margin: 120px auto 100px auto;
-    position: absolute;
-    bottom: -70px;
-    left: 0;
-    right: 0;
     margin: 100px auto;
   }
   .header__footer-item:nth-child(1) {
@@ -566,11 +551,7 @@ body {
   .header__footer {
     flex-direction: column;
     width: 300px;
-    position: absolute;
-    bottom: -9px;
-    left: 0;
-    right: 0;
-    margin: 0px auto;
+    margin: 100px auto;
   }
   .header__footer-item-body {
     padding: 35px;
@@ -2011,6 +1992,7 @@ body {
   display: inline-block;
   padding: 58px 60px 58px 30px;
   margin: 20px 0px;
+  z-index: 1;
 }
 .maps__body-contact {
   font-family: "Gotham Pro";
@@ -2040,6 +2022,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: -1;
 }
 .maps__body-li {
   display: flex;
@@ -2419,8 +2402,8 @@ body {
   position: relative;
 }
 .slider__slide-flex-up-header img {
-  width: 100%;
-  height: 330px;
+  width: 94%;
+  height: 436px;
 }
 .slider__slide-flex-up-prev-header {
   width: 60px;
