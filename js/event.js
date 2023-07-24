@@ -1,20 +1,135 @@
-function sliderNext(elem) {
-  var image = getParent(elem, '#slide').getElementsByTagName('img');
+let arr = [
+  [['../image/home0/0-0.jpg','3 244 600','','6*8','1'],
+   ['../image/home0/0-1.jpg','6 127 750','','1x4','2'],
+   ['../image/home0/0-2.jpg','3 601 000','','7x9','1'],
+  ],
 
-  let temp = image[0].src;
-  image[0].src = image[1].src;
-  image[1].src = image[2].src;
-  image[2].src = image[3].src;
-  image[3].src = temp;
+   [
+   ['../image/home0/0-3.jpg','3 886 000','','7,5x5','3'],
+   ['../image/home0/0-4.jpg','4 536 000','','8x10','1'],
+   ['../image/home0/0-5.jpg','9 390 000','','','2']
+  ],
+
+   [
+   ['../image/home0/0-6.jpg','3 337 000','','6x9','1'],
+   ['../image/home0/0-7.jpg','4 233 500','','8x8','1'],
+   ['../image/home0/0-8.jpg','9 827 250','','9x10','2']],
+
+   [
+   ['../image/home0/0-9.jpg','5 910 000','','8x13','1'],
+   ['../image/home0/0-10.jpg','0 000 000','','6х8','1'],
+  ['../image/home0/0-11.jpg','0 000 000','','ххх','х']],
+
+   [['../image/home0/0-12.jpg','0 000 000','','ххх','х'],
+   ['../image/home0/0-13.jpg','0 000 000','','7х7','2'],
+   ['../image/home0/0-14.jpg','0 000 000','','7х7','1']],
+
+   [['../image/home0/0-15.jpg','0 000 000','','ххх','2'],
+   ['../image/home0/0-16.jpg','0 000 000','','ххх','2'],
+   ['../image/home0/0-17.jpg','0 000 000','','7х6','2']],
+
+   [['../image/home0/0-0.jpg','3 244 600','','6*8','1'],
+   ['../image/home0/0-1.jpg','6 127 750','','1x4','2'],
+   ['../image/home0/0-2.jpg','3 601 000','','7x9','1'],
+   ['../image/home0/0-3.jpg','3 886 000','','7,5x5','3'],
+   ['../image/home0/0-4.jpg','4 536 000','','8x10','1'],
+   ['../image/home0/0-5.jpg','9 390 000','','','2'],
+   ['../image/home0/0-6.jpg','3 337 000','','6x9','1'],
+   ['../image/home0/0-7.jpg','4 233 500','','8x8','1'],
+   ['../image/home0/0-8.jpg','9 827 250','','9x10','2'],
+   ['../image/home0/0-9.jpg','5 910 000','','8x13','1']],
+
+   [['../image/home0/0-0.jpg','3 244 600','','6*8','1'],
+   ['../image/home0/0-1.jpg','6 127 750','','1x4','2'],
+   ['../image/home0/0-2.jpg','3 601 000','','7x9','1'],
+   ['../image/home0/0-3.jpg','3 886 000','','7,5x5','3'],
+   ['../image/home0/0-4.jpg','4 536 000','','8x10','1'],
+   ['../image/home0/0-5.jpg','9 390 000','','','2'],
+   ['../image/home0/0-6.jpg','3 337 000','','6x9','1'],
+   ['../image/home0/0-7.jpg','4 233 500','','8x8','1'],
+   ['../image/home0/0-8.jpg','9 827 250','','9x10','2'],
+   ['../image/home0/0-9.jpg','5 910 000','','8x13','1']],
+
+   [['../image/home0/0-0.jpg','3 244 600','','6*8','1'],
+   ['../image/home0/0-1.jpg','6 127 750','','1x4','2'],
+   ['../image/home0/0-2.jpg','3 601 000','','7x9','1'],
+   ['../image/home0/0-3.jpg','3 886 000','','7,5x5','3'],
+   ['../image/home0/0-4.jpg','4 536 000','','8x10','1'],
+   ['../image/home0/0-5.jpg','9 390 000','','','2'],
+   ['../image/home0/0-6.jpg','3 337 000','','6x9','1'],
+   ['../image/home0/0-7.jpg','4 233 500','','8x8','1'],
+   ['../image/home0/0-8.jpg','9 827 250','','9x10','2'],
+   ['../image/home0/0-9.jpg','5 910 000','','8x13','1']],
+
+   [['../image/home0/0-0.jpg','3 244 600','','6*8','1'],
+   ['../image/home0/0-1.jpg','6 127 750','','1x4','2'],
+   ['../image/home0/0-2.jpg','3 601 000','','7x9','1'],
+   ['../image/home0/0-3.jpg','3 886 000','','7,5x5','3'],
+   ['../image/home0/0-4.jpg','4 536 000','','8x10','1'],
+   ['../image/home0/0-5.jpg','9 390 000','','','2'],
+   ['../image/home0/0-6.jpg','3 337 000','','6x9','1'],
+   ['../image/home0/0-7.jpg','4 233 500','','8x8','1'],
+   ['../image/home0/0-8.jpg','9 827 250','','9x10','2'],
+   ['../image/home0/0-9.jpg','5 910 000','','8x13','1']],
+
+   [['../image/home0/0-0.jpg','3 244 600','','6*8','1'],
+   ['../image/home0/0-1.jpg','6 127 750','','1x4','2'],
+   ['../image/home0/0-2.jpg','3 601 000','','7x9','1'],
+   ['../image/home0/0-3.jpg','3 886 000','','7,5x5','3'],
+   ['../image/home0/0-4.jpg','4 536 000','','8x10','1'],
+   ['../image/home0/0-5.jpg','9 390 000','','','2'],
+   ['../image/home0/0-6.jpg','3 337 000','','6x9','1'],
+   ['../image/home0/0-7.jpg','4 233 500','','8x8','1'],
+   ['../image/home0/0-8.jpg','9 827 250','','9x10','2'],
+   ['../image/home0/0-9.jpg','5 910 000','','8x13','1']],
+]
+let index = 0;
+let flagIndex = 0;
+function sliderNext(elem) {
+  let parent = getParent(elem,'#slide');
+  let indexarr = parent.getAttribute('value');
+  if(flagIndex != indexarr) {
+    index = 0;
+  }
+if(index == arr[indexarr].length){
+  return 0;
+}
+
+  let Image = parent.getElementsByTagName("img")[0];
+  let price = parent.querySelector('.slider__slide-info-price');
+  let name =  parent.querySelector('.slider__slide-info-name');
+  let size = parent.querySelector('.slider__slide-info-property-size span');
+  let floor = parent.querySelector('.slider__slide-info-property-floor span');
+  Image.src = arr[indexarr][index][0];
+  price.innerHTML =  arr[indexarr][index][1];
+  name.innerHTML =  arr[indexarr][index][2];
+  size.innerHTML =  arr[indexarr][index][3];
+  floor.innerHTML =  arr[indexarr][index][4];
+
+index++
+  flagIndex = indexarr;
 }
 function sliderPrev(elem) {
-  var image = getParent(elem, '#slide').getElementsByTagName('img');
+let parent = getParent(elem,'#slide');
+let indexarr = parent.getAttribute('value');
+if(flagIndex != indexarr) {
+  index = 0;
+}
+if(index != 0 ){
+  index--;
+}
+let Image = parent.getElementsByTagName("img")[0];
+let price = parent.querySelector('.slider__slide-info-price');
+let name =  parent.querySelector('.slider__slide-info-name');
+let size = parent.querySelector('.slider__slide-info-property-size span');
+let floor = parent.querySelector('.slider__slide-info-property-floor span');
+Image.src = arr[indexarr][index][0];
+price.innerHTML =  arr[indexarr][index][1];
+name.innerHTML =  arr[indexarr][index][2];
+size.innerHTML =  arr[indexarr][index][3];
+floor.innerHTML =  arr[indexarr][index][4];
 
-  let temp = image[1].src;
-  image[1].src = image[0].src;
-  image[0].src = image[3].src;
-  image[3].src = image[2].src;
-  image[2].src = temp;
+flagIndex = indexarr;
 }
 function getParent(elemSelector, parentSelector) {
   var elem = elemSelector;
