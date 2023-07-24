@@ -1005,6 +1005,9 @@ body {
   opacity: 1;
 }
 
+.development {
+  margin-top: 200px;
+}
 .development__flex-wrapper {
   display: flex;
   align-items: flex-start;
