@@ -88,16 +88,18 @@ let flagIndex = 0;
 function sliderNext(elem) {
   let parent = getParent(elem,'#slide');
   let indexarr = parent.getAttribute('value');
+
   if(flagIndex != indexarr) {
     index = 0;
   }
+
 if(index == arr[indexarr].length -1){
-  return 0;
-  
+index = 0
+
 }else{
   index++
 }
-
+console.log(index)
   let Image = parent.getElementsByTagName("img")[0];
   let price = parent.querySelector('.slider__slide-info-price');
   let name =  parent.querySelector('.slider__slide-info-name');
@@ -121,8 +123,10 @@ if(flagIndex != indexarr) {
 }
 if(index != 0 ){
   index--;
+}else{
+  index = arr[indexarr].length-1;
 }
-
+console.log(index)
 let Image = parent.getElementsByTagName("img")[0];
 let price = parent.querySelector('.slider__slide-info-price');
 let name =  parent.querySelector('.slider__slide-info-name');
