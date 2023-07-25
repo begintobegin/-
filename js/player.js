@@ -17,6 +17,7 @@ function onPlayerReady(event) {
 	iframe = document.getElementById('player');
    if(iframe != null ){
     loadPlaylistVideoIds();
+	
    }
 }
 /*Загрузить плейлист*/			
