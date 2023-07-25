@@ -91,8 +91,11 @@ function sliderNext(elem) {
   if(flagIndex != indexarr) {
     index = 0;
   }
-if(index == arr[indexarr].length){
+if(index == arr[indexarr].length -1){
   return 0;
+  
+}else{
+  index++
 }
 
   let Image = parent.getElementsByTagName("img")[0];
@@ -106,7 +109,8 @@ if(index == arr[indexarr].length){
   size.innerHTML =  arr[indexarr][index][3];
   floor.innerHTML =  arr[indexarr][index][4];
 
-index++
+
+
   flagIndex = indexarr;
 }
 function sliderPrev(elem) {
@@ -118,6 +122,7 @@ if(flagIndex != indexarr) {
 if(index != 0 ){
   index--;
 }
+
 let Image = parent.getElementsByTagName("img")[0];
 let price = parent.querySelector('.slider__slide-info-price');
 let name =  parent.querySelector('.slider__slide-info-name');
