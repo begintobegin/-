@@ -107,7 +107,7 @@ console.log(index)
   let floor = parent.querySelector('.slider__slide-info-property-floor span');
   Image.src = arr[indexarr][index][0];
   price.innerHTML =  arr[indexarr][index][1];
-  name.innerHTML =  arr[indexarr][index][2];
+  name.innerHTML =  'Телефон: 25-88-88';
   size.innerHTML =  arr[indexarr][index][3];
   floor.innerHTML =  arr[indexarr][index][4];
 
@@ -134,7 +134,7 @@ let size = parent.querySelector('.slider__slide-info-property-size span');
 let floor = parent.querySelector('.slider__slide-info-property-floor span');
 Image.src = arr[indexarr][index][0];
 price.innerHTML =  arr[indexarr][index][1];
-name.innerHTML =  arr[indexarr][index][2];
+name.innerHTML =  'Телефон: 25-88-88';
 size.innerHTML =  arr[indexarr][index][3];
 floor.innerHTML =  arr[indexarr][index][4];
 
