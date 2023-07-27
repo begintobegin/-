@@ -83,63 +83,63 @@ let arr = [
    ['../image/home0/0-8.jpg','9 827 250','','9x10','2'],
    ['../image/home0/0-9.jpg','5 910 000','','8x13','1']],
 ]
-let index = 0;
-let flagIndex = 0;
-function sliderNext(elem) {
-  let parent = getParent(elem,'#slide');
-  let indexarr = parent.getAttribute('value');
+// let index = 0;
+// let flagIndex = 0;
+// function sliderNext(elem) {
+//   let parent = getParent(elem,'#slide');
+//   let indexarr = parent.getAttribute('value');
 
-  if(flagIndex != indexarr) {
-    index = 0;
-  }
+//   if(flagIndex != indexarr) {
+//     index = 0;
+//   }
 
-if(index == arr[indexarr].length -1){
-index = 0
+// if(index == arr[indexarr].length -1){
+// index = 0
 
-}else{
-  index++
-}
-console.log(index)
-  let Image = parent.getElementsByTagName("img")[0];
-  let price = parent.querySelector('.slider__slide-info-price');
-  let name =  parent.querySelector('.slider__slide-info-name');
-  let size = parent.querySelector('.slider__slide-info-property-size span');
-  let floor = parent.querySelector('.slider__slide-info-property-floor span');
-  Image.src = arr[indexarr][index][0];
-  price.innerHTML =  arr[indexarr][index][1];
-  name.innerHTML =  'Телефон: 25-88-88';
-  size.innerHTML =  arr[indexarr][index][3];
-  floor.innerHTML =  arr[indexarr][index][4];
+// }else{
+//   index++
+// }
+// console.log(index)
+//   let Image = parent.getElementsByTagName("img")[0];
+//   let price = parent.querySelector('.slider__slide-info-price');
+//   let name =  parent.querySelector('.slider__slide-info-name');
+//   let size = parent.querySelector('.slider__slide-info-property-size span');
+//   let floor = parent.querySelector('.slider__slide-info-property-floor span');
+//   Image.src = arr[indexarr][index][0];
+//   price.innerHTML =  arr[indexarr][index][1];
+//   name.innerHTML =  'Телефон: 25-88-88';
+//   size.innerHTML =  arr[indexarr][index][3];
+//   floor.innerHTML =  arr[indexarr][index][4];
 
 
 
-  flagIndex = indexarr;
-}
-function sliderPrev(elem) {
-let parent = getParent(elem,'#slide');
-let indexarr = parent.getAttribute('value');
-if(flagIndex != indexarr) {
-  index = 0;
-}
-if(index != 0 ){
-  index--;
-}else{
-  index = arr[indexarr].length-1;
-}
-console.log(index)
-let Image = parent.getElementsByTagName("img")[0];
-let price = parent.querySelector('.slider__slide-info-price');
-let name =  parent.querySelector('.slider__slide-info-name');
-let size = parent.querySelector('.slider__slide-info-property-size span');
-let floor = parent.querySelector('.slider__slide-info-property-floor span');
-Image.src = arr[indexarr][index][0];
-price.innerHTML =  arr[indexarr][index][1];
-name.innerHTML =  'Телефон: 25-88-88';
-size.innerHTML =  arr[indexarr][index][3];
-floor.innerHTML =  arr[indexarr][index][4];
+//   flagIndex = indexarr;
+// }
+// function sliderPrev(elem) {
+// let parent = getParent(elem,'#slide');
+// let indexarr = parent.getAttribute('value');
+// if(flagIndex != indexarr) {
+//   index = 0;
+// }
+// if(index != 0 ){
+//   index--;
+// }else{
+//   index = arr[indexarr].length-1;
+// }
+// console.log(index)
+// let Image = parent.getElementsByTagName("img")[0];
+// let price = parent.querySelector('.slider__slide-info-price');
+// let name =  parent.querySelector('.slider__slide-info-name');
+// let size = parent.querySelector('.slider__slide-info-property-size span');
+// let floor = parent.querySelector('.slider__slide-info-property-floor span');
+// Image.src = arr[indexarr][index][0];
+// price.innerHTML =  arr[indexarr][index][1];
+// name.innerHTML =  'Телефон: 25-88-88';
+// size.innerHTML =  arr[indexarr][index][3];
+// floor.innerHTML =  arr[indexarr][index][4];
 
-flagIndex = indexarr;
-}
+// flagIndex = indexarr;
+// }
 function getParent(elemSelector, parentSelector) {
   var elem = elemSelector;
   var parents = document.querySelectorAll(parentSelector);
