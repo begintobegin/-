@@ -1038,7 +1038,7 @@ body {
   height: auto;
 }
 .development__form-wrapper {
-  background: linear-gradient(149.97deg, #ffdd56 12.71%, #ffec83 92.47%);
+  background: #FFDD56;
   padding: 50px 60px;
   border-radius: 20px;
   text-align: center;
@@ -1631,7 +1631,7 @@ body {
   margin-top: 300px;
 }
 .consultation__form-wrapper {
-  background: linear-gradient(149.97deg, #ffdd56 12.71%, #ffec83 92.47%);
+  background: #FFDD56;
   padding: 50px 50px;
   border-radius: 20px;
   text-align: center;
@@ -1654,7 +1654,7 @@ body {
   text-align: center;
   color: #ffffff;
   position: absolute;
-  top: -10px;
+  top: -30px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
