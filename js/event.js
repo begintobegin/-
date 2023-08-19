@@ -309,30 +309,30 @@ function unCheack(cheackBox){
 
 }
 
-document.querySelector('#phone').onkeydown = function(e){
-inputphone(e,document.querySelector('#phone'))
-}
-document.querySelector('#phone2').onkeydown = function(e){
-  inputphone(e,document.querySelector('#phone2'))
-  }
+// document.querySelector('#phone').onkeydown = function(e){
+// inputphone(e,document.querySelector('#phone'))
+// }
+// document.querySelector('#phone2').onkeydown = function(e){
+//   inputphone(e,document.querySelector('#phone2'))
+//   }
 
 
 
 
-function inputphone(e, phone){
-function stop(evt) {
-    evt.preventDefault();
-}
-let key = e.key, v = phone.value; not = key.replace(/([0-9])/, 1)
+// function inputphone(e, phone){
+// function stop(evt) {
+//     evt.preventDefault();
+// }
+// let key = e.key, v = phone.value; not = key.replace(/([0-9])/, 1)
 
-if(not == 1 || 'Backspace' === not){
-if('Backspace' != not){ 
-    if(v.length < 3 || v ===''){phone.value= '+7('}
-    if(v.length === 6){phone.value= v +')'}
-    if(v.length === 10){phone.value= v +'-'}
-     if(v.length === 13){phone.value= v +'-'}
-    }
-}else{stop(e)}  }
+// if(not == 1 || 'Backspace' === not){
+// if('Backspace' != not){ 
+//     if(v.length < 3 || v ===''){phone.value= '+7('}
+//     if(v.length === 6){phone.value= v +')'}
+//     if(v.length === 10){phone.value= v +'-'}
+//      if(v.length === 13){phone.value= v +'-'}
+//     }
+// }else{stop(e)}  }
 function slider_image(cont){
   let MainImage = getParent(cont, '#sliderUp').getElementsByTagName('img')[0];
   let n = '';
