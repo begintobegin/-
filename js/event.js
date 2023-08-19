@@ -196,12 +196,12 @@ let bar = document.querySelector('#bar');
 function question_next() {
   let num = document.querySelector('.discount__body-question-count span');
 
-  if (int_num < 9) {
+  if (int_num < 10) {
 
     if (window.innerWidth <= 1100) {
-      bar.style.width = parseInt(bar.style.width, 10) + 36 + 'px';
+      bar.style.width = parseInt(bar.style.width, 10) + 34 + 'px';
     } else {
-      bar.style.width = parseInt(bar.style.width, 10) + 66 + 'px';
+      bar.style.width = parseInt(bar.style.width, 10) + 59 + 'px';
     }
 
     num_span++;
@@ -237,6 +237,7 @@ function question_back() {
 }
 function add_question(num) {
   let parent = document.querySelector('.discount__body-question-wrapper');
+  let btn = document.querySelector(".discount__body-question-button-forth");
   parent.innerHTML = '';
   let arr = [
     [
@@ -271,8 +272,18 @@ function add_question(num) {
       'Укажите район, в котором будет находится ваш дом ',
       'Укажите район строительства...',
     ],
+    [
+      'Для уточнения скидки наберите оператору'
+    ],
   ];
+if(num == arr.length - 1){
+  btn.innerHTML = ` <a href="tel:25-88-88"  target="_ blank">
+  25-88-88 <img src="image/159832.png"width = "15px" height="15px" alt="">
+</a>`
 
+}else{
+  btn.innerHTML = "далее<div></div>";
+}
   for (let j = 0; j < arr[num].length; j++) {
     if (j == 0) {
       let elem = document.querySelector('.discount__body-question-text');
@@ -284,7 +295,7 @@ function add_question(num) {
       elem.placeholder = arr[num][j];
 
       parent.appendChild(elem);
-    } else {
+    }else {
       let parent = document.querySelector('.discount__body-question-wrapper');
       let elem = document.createElement('div');
       elem.classList.add('discount__body-question-wrapper-item');
