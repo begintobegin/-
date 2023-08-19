@@ -868,13 +868,13 @@ body {
   color: #505050;
 }
 .slider__slide-info-name {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 40px;
   text-transform: uppercase;
   color: #505050;
 }
 .slider__slide-info-price {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 40px;
   text-transform: uppercase;
   color: #505050;
