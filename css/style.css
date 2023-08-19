@@ -925,6 +925,8 @@ body {
   padding: 10px 30px;
   background-color: #ffec83;
   border-radius: 5px;
+  font-size: 20px;
+
 }
 .slider__project {
   display: flex;
